@@ -1,0 +1,9 @@
+SELECT rh.* , r.id FROM `registrohistoricorequisicions` rh
+INNER JOIN `requisicions` r on rh.rqs_id = r.id
+ORDER BY r.id, rh.id
+
+
+INSERT INTO `aluna`.`registrohistoricorequisicions`
+(`rqs_id`,`acc_rqs_id`,`user_id`,`obs_reg_rqs`,`created_at`,`updated_at`)
+VALUES
+(41, 1, 37,'materiales pedagógicos  y asistencial para trabajo con los jóvenes del aula tucan','2018-06-06 21:46:53', '2018-06-06 21:46:53')
